@@ -22,9 +22,22 @@ const textVariants = {
     },
   },
 };
+const sliderVariants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-220%",
+    transition: {
+      repeat: Infinity,
+      repeatType:"mirror",
+      duration: 20,
+    },
+  },
+};
 const Home = () => {
   return (
-    <div className="home">
+    <motion.div className="home">
       <div className="wrapper">
         <motion.div
           className="textcontainer"
@@ -48,11 +61,11 @@ const Home = () => {
           />
         </motion.div>
       </div>
-      <div className="slidingtextcontainer">Avid reader and open to learn</div>
+      <motion.div className="slidingtextcontainer" variants={sliderVariants} initial="initial" animate="animate">Avid reader and open to learn</motion.div>
       <div className="imgcontainer">
         <img src="/hero.png" alt=""></img>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
