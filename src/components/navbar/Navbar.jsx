@@ -2,11 +2,10 @@ import Sidebar from "../sidebar/Sidebar"
 import "./navbar.scss"
 
 const Navbar = () => {
-  return (
-    <div className="navbar">
+  return<div className="navbar">
        <Sidebar/>
         <div className="wrapper">
-            <span>Hello</span>
+            <span>Portfolio</span>
             <div className="social">
                 <a href="#"><img src="/facebook.png" alt=""/></a>
                 <a href="#"><img src="/instagram.png" alt=""/></a>
@@ -15,7 +14,6 @@ const Navbar = () => {
             </div>
         </div>
     </div>
-  )
 }
 
-export default Navbar
+export default Navbar;
