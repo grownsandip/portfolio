@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Parallex from "./components/parallex/Parallex";
 import Services from "./components/Services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
+import Contacts from "./components/contacts/Contacts";
 const App = () => {
   return (
     <div>
@@ -20,10 +21,10 @@ const App = () => {
       <section id="Portfolio">
         <Parallex type="portfolio" />
       </section>
-      <section>
         <Portfolio/>
+      <section id="Contacts">
+        <Contacts/>
       </section>
-      <section id="Contacts"></section>
     </div>
   );
 };
