@@ -5,9 +5,11 @@ import Parallex from "./components/parallex/Parallex";
 import Services from "./components/Services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contacts from "./components/contacts/Contacts";
+import Cursor from "./components/Cursor/Cursor";
 const App = () => {
   return (
     <div>
+      <Cursor/>
       <section id="Homepage">
         <Navbar />
         <Home />
